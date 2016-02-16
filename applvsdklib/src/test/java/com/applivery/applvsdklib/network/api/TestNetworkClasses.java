@@ -1,13 +1,14 @@
 package com.applivery.applvsdklib.network.api;
 
+import android.content.Context;
 import com.applivery.applvsdklib.domain.model.BusinessObject;
-import com.applivery.applvsdklib.network.api.model.ApiBuildTokenData;
 import com.applivery.applvsdklib.network.api.requests.RequestHttpException;
 import com.applivery.applvsdklib.network.api.responses.ApiAppliveryServerErrorResponse;
 import com.applivery.applvsdklib.network.api.responses.ServerResponse;
 import com.applivery.applvsdklib.network.api.model.ApiAppConfigData;
 import com.applivery.applvsdklib.doubles.MockRequest;
 import com.applivery.applvsdklib.doubles.MockRequestExecute;
+import com.applivery.applvsdklib.tools.androidimplementations.AndroidCurrentAppInfo;
 import com.applivery.applvsdklib.utils.AppliveryTestApi;
 import com.applivery.applvsdklib.utils.MockAppliveryInstance;
 import org.junit.Before;
@@ -30,7 +31,9 @@ public class TestNetworkClasses {
 
   @Test
   public void apiServiceBuilderTest(){
-    AppliveryApiService appliveryApi = AppliveryApiServiceBuilder.getAppliveryApiInstance();
+    Context applicationContext = null;
+    AppliveryApiService appliveryApi = AppliveryApiServiceBuilder.getAppliveryApiInstance(
+        new AndroidCurrentAppInfo(applicationContext));
     assertNotNull(appliveryApi);
   }
 
