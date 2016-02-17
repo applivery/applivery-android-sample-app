@@ -1,0 +1,3 @@
+[submodule "applivery-android-sdk"]
+	path = applivery-android-sdk
+	url = https://github.com/applivery/applivery-android-sdk
