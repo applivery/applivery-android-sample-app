@@ -1,4 +1,5 @@
-# applivery-android-sample-app  [![Build Status](https://travis-ci.org/applivery/applivery-android-sample-app.svg?branch=master)](https://travis-ci.org/applivery/applivery-android-sample-app) [![codecov.io](https://codecov.io/github/applivery/applivery-android-sample-app/coverage.svg?branch=master)](https://codecov.io/github/applivery/applivery-android-sample-app)
+# applivery-android-sample-app  [![Build Status](https://travis-ci.org/applivery/applivery-android-sample-app.svg?branch=master)](https://travis-ci.org/applivery/applivery-android-sample-app) 
+<!--[![codecov.io](https://codecov.io/github/applivery/applivery-android-sample-app/coverage.svg?branch=master)](https://codecov.io/github/applivery/applivery-android-sample-app)-->
 
 Android Sample App including Applivery SDK
 

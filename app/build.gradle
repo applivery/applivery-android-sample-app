@@ -1,5 +1,4 @@
 apply plugin: 'com.android.application'
-apply plugin: 'jacoco-android'
 
 def STRING = "String"
 
@@ -28,15 +27,6 @@ android {
   }
   lintOptions {
     abortOnError false
-  }
-}
-
-buildscript {
-  repositories {
-    jcenter()
-  }
-  dependencies {
-    classpath 'com.dicedmelon.gradle:jacoco-android:0.1.1'
   }
 }
 
