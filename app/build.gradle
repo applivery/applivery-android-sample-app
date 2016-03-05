@@ -17,9 +17,6 @@ android {
     buildConfigField STRING, "APP_SECRET", '"f0e46ebc297e6e9a8fa427e15e42336d4d24a33b"'
   }
   buildTypes {
-    debug {
-      testCoverageEnabled true
-    }
     release {
       minifyEnabled false
       proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
