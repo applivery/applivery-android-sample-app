@@ -1,10 +1,26 @@
+/*
+ * Copyright (c) 2016 Applivery
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
 apply plugin: 'com.android.application'
 
 def STRING = "String"
 
 android {
   compileSdkVersion 23
-  buildToolsVersion "23.0.2"
+  buildToolsVersion '23.0.2'
 
   defaultConfig {
     applicationId "com.applivery.appliverysdk"
@@ -13,8 +29,14 @@ android {
     versionCode 1
     versionName "1.0"
 
-    buildConfigField STRING, "APP_KEY", '"569bf0f4a81d1598273a2bd1"'
-    buildConfigField STRING, "APP_SECRET", '"f0e46ebc297e6e9a8fa427e15e42336d4d24a33b"'
+    //Sandbox test App
+//    buildConfigField STRING, "APP_KEY", '"569bf0f4a81d1598273a2bd1"'
+//    buildConfigField STRING, "APP_SECRET", '"f0e46ebc297e6e9a8fa427e15e42336d4d24a33b"'
+
+    //Production test App
+    buildConfigField STRING, "APP_KEY", '"56e744ec0174c74a6b25367c"'
+    buildConfigField STRING, "APP_SECRET", '"b5cc90f835dbd9df33b2aa06364e76d60ccd3f8a"'
+
   }
   buildTypes {
     release {
