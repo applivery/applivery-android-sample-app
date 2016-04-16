@@ -15,6 +15,7 @@
   -->
 
 <resources>
-  <string name="app_name">AppliverySdk</string>
-  <string name="title_activity_main">MainActivity</string>
+  <string name="app_name">Applivery SDK</string>
+  <string name="applivery_app_name">Applivery</string>
+  <string name="title_activity_main">Applivery</string>
 </resources>
