@@ -24,10 +24,10 @@ android {
 
   defaultConfig {
     applicationId "com.applivery.appliverysdk"
-    minSdkVersion 15
+    minSdkVersion 10
     targetSdkVersion 23
-    versionCode 1
-    versionName "1.0"
+    versionCode 2
+    versionName "2.0"
 
     //Sandbox test App
 //    buildConfigField STRING, "APP_KEY", '"569bf0f4a81d1598273a2bd1"'

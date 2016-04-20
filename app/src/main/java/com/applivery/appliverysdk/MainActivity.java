@@ -17,11 +17,20 @@
 package com.applivery.appliverysdk;
 
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.Chronometer;
+import android.widget.TextView;
+import com.applivery.applvsdklib.Applivery;
+import com.applivery.applvsdklib.AppliverySdk;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -31,14 +40,27 @@ public class MainActivity extends AppCompatActivity {
     Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
     setSupportActionBar(toolbar);
 
-    FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+    FloatingActionButton disable = (FloatingActionButton) findViewById(R.id.fab);
+    FloatingActionButton enable = (FloatingActionButton) findViewById(R.id.fab2);
 
-    fab.setOnClickListener(new View.OnClickListener() {
+    enable.setOnClickListener(new View.OnClickListener() {
       @Override public void onClick(View view) {
-        Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-            .setAction("Action", null)
-            .show();
+        Applivery.enableFeedback();
+        Snackbar.make(view, "Feedback Enabled" , Snackbar.LENGTH_LONG).show();
       }
     });
+
+    disable.setOnClickListener(new View.OnClickListener() {
+      @Override public void onClick(View view) {
+        Applivery.disableFeedback();
+        Snackbar.make(view, "Feedback disabled" , Snackbar.LENGTH_LONG).show();
+      }
+    });
+
+    startChrono();
+  }
+
+  private void startChrono() {
+    ((Chronometer) findViewById(R.id.chronometer)).start();
   }
 }
