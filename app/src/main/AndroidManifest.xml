@@ -22,7 +22,7 @@
       android:allowBackup="true"
       android:name=".AppliveryApplication"
       android:icon="@drawable/ic_launcher"
-      android:label="@string/applivery_app_name"
+      android:label="@string/applivery_sdk_string_name"
       android:supportsRtl="true"
       android:theme="@style/AppTheme"
       >
