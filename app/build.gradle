@@ -19,6 +19,7 @@ apply plugin: 'com.android.application'
 def STRING = "String"
 
 android {
+
   compileSdkVersion 23
   buildToolsVersion '23.0.2'
 
